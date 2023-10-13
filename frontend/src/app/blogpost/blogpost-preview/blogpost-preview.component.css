@@ -1,0 +1,10 @@
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-img {
+  height: 200px;
+  object-fit: cover;
+}

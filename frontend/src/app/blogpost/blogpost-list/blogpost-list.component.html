@@ -1,0 +1,15 @@
+<div class="container">
+  <app-header></app-header>
+  <app-searchbar></app-searchbar>
+  <div class="row card-deck">
+    <ng-template ngFor let-blogpost [ngForOf]="displayedBlogposts">
+      <div class="col-md-3 mb-4">
+        <app-blogpost-preview [blogpost]="blogpost"></app-blogpost-preview>
+      </div>
+    </ng-template>
+  </div>
+  {{blogposts.length}}
+  <app-pagination [currentPage]="currentPage" [amount]="blogposts.length" [maxItems]="maxDisplayedBlogs" (onNewPage)="updateDisplayedBlogs($event)" ></app-pagination>
+</div>
+
+

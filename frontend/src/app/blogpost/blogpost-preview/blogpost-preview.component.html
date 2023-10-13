@@ -1,0 +1,6 @@
+<div class="card" routerLink="/test">
+    <div class="card-body bg-gradient bg-body-tertiary">
+      <h5 class="card-title">{{ blogpost.name }}</h5>
+    </div>
+    <img class="img-fluid card-img" [src]="'assets/images/' + blogpost.id  + blogpost.image" [alt]="blogpost.name">
+</div>
